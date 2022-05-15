@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="oie_4RgnLuYqa57E.png">
+    <link href="css/styles.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="#"><img src="Images/Capture.PNG" alt="AidQuest Logo" /></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="login.html" id="login-register-button">Login / Register</a>
+        </div>
+    </header>
+    <div class="container mt-3">
+        <h4 class=" large mb-2">Contact <span class="text-secondary">Us</span></h4>
+            <div class="row">
+                <div class="col-md-8 float-right">
+                    
+                    <h5 class="text-gray">Have a question about our website? Complete the form below and we’ll get back to you..</h5>
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    
+                                    <input type="text" class="form-control" name="name" placeholder="">
+                                    <label for="name">Firstname</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="lastname" placeholder="">
+                                    <label for="lastname">lastname</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="name" placeholder="Enter email">
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="row " >
+                            <label for="messhage">Comment or message</label>
+                            <textarea name="messsage" style="margin: 2px;height:300px;width: 100%"></textarea>
+                        </div>
+                        <button class="btn-blue m-3 p-2">Send message</button>
+                    </form>
+                </div>
+                
+            </div>
+    
+        
+    </div>
+    <footer>
+        <div class="flex">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="games.html">Games</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            let navMenu = document.getElementById('nav-menu-container');
+            navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+        });
+    </script>
+    
+</body>
+</html>
